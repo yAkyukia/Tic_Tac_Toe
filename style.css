@@ -1,0 +1,50 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  background: whitesmoke;
+  inset-block: rgb(0, 255, 0);
+}
+
+body {
+  color: var(background);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+    "Open Sans", "Helvetica Neue", sans-serif, cursive;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: rgb(138, 2, 2);
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(6, 6, 6);
+}
+
+#gameboard {
+  width: min(95%, 300px);
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 40px;
+}
+
+#scoreboard {
+  margin-top: 40px;
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  color: rgb(138, 2, 2);
+  width: min(95%, 200px);
+  max-width: 100%;
+}
